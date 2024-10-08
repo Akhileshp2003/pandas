@@ -1,0 +1,35 @@
+import pandas as pd
+df=pd.read_csv("D:/py project/Amazon_Customers.csv",encoding="cp1252")
+print(df)
+
+c=df["CustomerKey"]
+df.head()
+
+print(type(df)) #dataframe
+print(type(c))  #series
+c.hist()
+
+import matplotlib.pyplot as plot
+c.mean()
+c.min()
+c.max()
+c.count()
+c.describe()
+
+df["BirthDate"].head() # head()   --- print first 5 row
+
+c.hist()
+plot.show()
+
+r=df[["FirstName","LastName"]]
+
+df.to_numpy()
+
+r=df[["FirstName","LastName"]]
+
+r.loc[2]
+
+r.index
+
+
+
